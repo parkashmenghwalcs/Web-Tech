@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Bright Future University</title>
+  <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+  <div id="headercode"></div>
+
+  <main class="container">
+    <section class="card">
+      <h1>Contact Bright Future University</h1>
+      <p>
+        Have questions about admissions, programs, or general inquiries?  
+        Please fill out the form below and our support team will get back to you within 2–3 business days.
+      </p>
+
+      <form action="#" method="post" novalidate>
+        <!-- Full Name -->
+        <div class="field">
+          <label for="fullname">Full Name</label>
+          <input id="fullname" name="fullname" type="text" placeholder="Enter your full name" required pattern="[A-Za-z ]{3,40}">
+          <div class="form-hint">Only letters and spaces (3–40 characters)</div>
+        </div>
+
+        <!-- Email -->
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="example@smiu.edu.pk" required>
+          <div class="form-hint">Enter a valid email address</div>
+        </div>
+
+        <!-- Contact Number -->
+        <div class="field">
+          <label for="phone">Contact Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="+9232437402747" required pattern="[0-9+ ]{11,15}">
+          
+        </div>
+
+        <!-- Subject -->
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Write the subject of your message" required minlength="5" maxlength="60">
+        </div>
+
+        <!-- Message -->
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your detailed message here..." required></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="field">
+          <input type="submit" value="Submit Message">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="JS/header.js"></script>
+</body>
+</html>
